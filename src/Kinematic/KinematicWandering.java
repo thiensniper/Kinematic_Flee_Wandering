@@ -42,7 +42,7 @@ public class KinematicWandering {
 	}
 	
 	public KinematicOutput generateKinematicOutput() {
-		float rotaion = (float) (Math.random()-Math.random())*maxRotation;
+		float rotation = (float) (Math.random()-Math.random())*maxRotation;
 		Vector2D velocity = new Vector2D();
 		velocity.setX((float) Math.sin(character.getOrientation()));
 		velocity.setZ((float) Math.cos(character.getOrientation()));
