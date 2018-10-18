@@ -62,7 +62,7 @@ public class Character {
         this.velocity = kinematicOutput.getVelocity();
         this.rotation = kinematicOutput.getRotation();
         
-        this.position = this.position.addVector2D(velocity.mulConstant(time));
+        this.position = this.position.addVector2D(Vector2D.mulConstant(velocity, time));
         this.orientation = this.rotation * time;
     }
 }
